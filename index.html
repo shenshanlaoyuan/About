@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>关于</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="shortcut icon" href="image/favicon.ico"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-background-image="image/2.jpg">
+            <font color="#ffff33" size="5">
+                <p class="fragment">如果说人生是自我编写的程序</p>
+                <p class="fragment">那么青春就是其中意味深长的代码 </p>
+                <p class="fragment">或简单 </p>
+                <p class="fragment">分解成彼此独立的字符 </p>
+                <p class="fragment">或复杂 </p>
+                <p class="fragment">拼凑成一连串神秘的语句</p>
+                <p class="fragment">我们尝试着不断调试 </p>
+                <p class="fragment">不断优化 </p>
+                <p class="fragment">无论编译的结果如何 </p>
+                <p class="fragment">过程才是最美的 </p>
+                <p class="fragment">如果说这段代码不能复制 </p>
+                <p class="fragment">那么我愿意用一生去续写……</p>
+            </font>
+        </section>
+        <section>
+            <section data-background-iframe="http://shenshanlaoyuan.com"></section>
+            <section data-background-iframe="http://resume.shenshanlaoyuan.com"></section>
+            <section data-background-iframe="https://readingnotes.shenshanlaoyuan.com"></section>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+    Reveal.configure({
+        autoSlide: 1000
+    });
+</script>
+</body>
+</html>
